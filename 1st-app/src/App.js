@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -16,9 +16,9 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       <MyComponent/>
-      <MyComponent2(props: "color:red")/>  
+      <MyComponent2 param="blue"/>  
       </header>
     </div>
   );
@@ -31,7 +31,7 @@ function MyComponent() {
   
 }
 
-function MyComponent2({props}) {
-  return <h1 style={{color: color}}>I am a component!</h1>
+function MyComponent2({param}) {
+  return <h1 style={{color: param}}>I am a component!</h1>
   
 }

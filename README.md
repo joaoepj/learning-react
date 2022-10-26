@@ -11,3 +11,10 @@ function MyComponent(){
 ```
 
 React components use props to communicate with each other. Think in this like HTML tag attributes
+
+```
+function MyComponent2({param}) {
+  return <h1 style={{color: param}}>I am a component!</h1>
+  
+}
+```

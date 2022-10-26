@@ -18,7 +18,8 @@ function App() {
           Learn React
         </a> */}
       <MyComponent/>
-      <MyComponent2 param="blue"/>  
+      <MyComponent2 param="blue"/>
+      <MyComponent3 param="red"/>  
       </header>
     </div>
   );
@@ -33,5 +34,10 @@ function MyComponent() {
 
 function MyComponent2({param}) {
   return <h1 style={{color: param}}>I am a component!</h1>
+  
+}
+
+function MyComponent3({param}) {
+  return <h1 onClick={() => alert("You clicked me!")} style={{color: param}}>I am a component!</h1>
   
 }

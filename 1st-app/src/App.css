@@ -24,6 +24,10 @@
   color: white;
 }
 
+.App-fs {
+  font-size: calc(8px);
+}
+
 .App-link {
   color: #61dafb;
 }
